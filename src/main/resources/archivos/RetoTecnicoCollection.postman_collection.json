@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "327e5636-6310-473b-9f89-4465855028b5",
+		"name": "RetoTecnicoCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cargarArchivo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/Users/CANVIA/Desktop/SpringBatchProyect/src/main/resources/archivos/data.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/retotecnico/api/cargarArchivo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"retotecnico",
+						"api",
+						"cargarArchivo"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarClientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/retotecnico/api/listarClientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"retotecnico",
+						"api",
+						"listarClientes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
